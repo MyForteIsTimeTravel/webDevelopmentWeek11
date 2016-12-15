@@ -12,10 +12,26 @@
   <h1>Hello <span id="my-name"></span>!</h1>
 
   <form id="get-name" action="#" method="post">
-    <label for="user-name">Enter name:</label>
-    <input type="text" id="user-name" placeholder="Your name?">
+    <ul>
+        <li> 
+            <label for="user-name">Enter username:</label>
+            <input type="text" id="user-name" placeholder="Username">
+        </li>
+        
+        <li>
+            <label for="real-name">Enter real name:</label>
+            <input type="text" id="real-name" placeholder="realname">
+        </li>
+        <li>
+            <label for="dob">Enter date of birth:</label>
+            <input type="text" id="dob" placeholder="xx/yy/zz">
+        </li>
+    </ul>
+
     <input type="submit">
   </form>
+    
+  <input type="submit" id="reset-storage" value="clear storage" onclick="return clearStorage();">
 
   <script src="js/localstore.js"></script>
 </body>
